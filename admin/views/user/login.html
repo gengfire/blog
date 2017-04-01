@@ -1,0 +1,13 @@
+{{include '../common/header'}}
+<div class="wrap">
+	<div class="login-btn">Login</div>
+	<script type="text/javascript">
+		 console.log(document.cookie);
+		$('.login-btn').click(function(){
+			$.post('/user/signin', {}, function(ret){
+				console.log(ret);
+			}, 'json');
+		});
+	</script>
+</div>
+{{include '../common/footer'}}

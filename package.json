@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pm2 start index.js --watch",
+    "start": "pm2 start index.js",
+    "kill": "pm2 delete index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.coding.net/gengfire/blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "art-template": "^3.1.3",
+    "mysql": "^2.13.0",
+    "redis": "^2.7.1"
+  }
+}
